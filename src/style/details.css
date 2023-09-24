@@ -1,0 +1,108 @@
+.details {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcGZuCyJW7Cc6_sNfjdc0SRxU5SQPZAO3lfCjyQ9eu3o9BQBuWZKT4TTGCwB5q8DEbkXyS9NgG77SIed8v9RMy-6LvYYQnWBy_YQ8_x23o6ntJQundKDSx5a5UbxIMXuG1nPs__3956m9U_r5TFuu3CGjWCuhAoloaoak1VNu_t6sKzpp_VWhQDsKB4g/s3840/lake-forest-night-painting-1222023.png");
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.character_div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.type {
+    font-family: monospace;
+    color: black;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.character {
+    height: 200px;
+    width: 200px;
+    background-image: url("../assets/man.png");
+    background-size: contain;
+    margin-top: 200px;
+}
+
+.character_text {
+    height: 250px;
+    width: 50vw;
+    background-color: white;
+    border: 3px solid black;
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    padding-left: 30px;
+    border-radius: 30px;
+}
+
+.button_div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+    width: 200px;
+}
+
+.next {
+    height: 40px;
+    width: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: no;
+    animation-delay: 13s;
+    animation-duration: 100ms;
+    animation-fill-mode: forwards;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+@keyframes no {
+    to {
+        border: 2px solid black;
+        color: black;
+    }
+}
+
+#answer {
+    height: 50px;
+    width: 400px;
+    font-size: 25px;
+    position: absolute;
+    bottom: 400px;
+    padding-left: 30px;
+}
+
+#next {
+    animation-delay: 6s;
+    position: relative;
+    left: 100px;
+}
+
+#submit {
+    position: relative;
+    left: 300px;
+    animation-delay: 4s;
+}
+
+#contact {
+    border: 2px solid black;
+    color: black;
+    position: absolute;
+    left: 600px;
+}

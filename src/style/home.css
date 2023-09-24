@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&family=Caveat:wght@600&family=Dancing+Script:wght@500&family=Delicious+Handrawn&family=Gajraj+One&family=Indie+Flower&family=Josefin+Sans:wght@500&family=Just+Another+Hand&family=Kaushan+Script&family=Labrada:ital,wght@0,300;1,300&family=Lobster&family=MedievalSharp&family=Orbitron:wght@500;900&family=Permanent+Marker&family=Press+Start+2P&family=Quicksand:wght@600&family=Raleway:wght@600&family=Roboto+Slab:wght@500&family=Roboto:wght@300&family=Shadows+Into+Light&family=Slackside+One&family=Source+Code+Pro&family=Tilt+Prism&family=VT323&display=swap');
+.home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcGZuCyJW7Cc6_sNfjdc0SRxU5SQPZAO3lfCjyQ9eu3o9BQBuWZKT4TTGCwB5q8DEbkXyS9NgG77SIed8v9RMy-6LvYYQnWBy_YQ8_x23o6ntJQundKDSx5a5UbxIMXuG1nPs__3956m9U_r5TFuu3CGjWCuhAoloaoak1VNu_t6sKzpp_VWhQDsKB4g/s3840/lake-forest-night-painting-1222023.png");
+    background-size: cover;
+}
+
+.title {
+    position: absolute;
+    top: 30px;
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+}
+
+.question {
+    font-family: monospace;
+    color: black;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.follow_text {
+    font-family: monospace;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.character_div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.character {
+    height: 200px;
+    width: 200px;
+    background-image: url("../assets/man.png");
+    background-size: contain;
+    margin-top: 200px;
+}
+
+.character_text {
+    height: 250px;
+    width: 50vw;
+    background-color: white;
+    border: 3px solid black;
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    padding-left: 30px;
+    border-radius: 30px;
+}
+
+.button_div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+    width: 200px;
+}
+
+.yes {
+    height: 40px;
+    width: 80px;
+    border: 2px solid white;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    animation-name: yes;
+    animation-delay: 6s;
+    animation-duration: 100ms;
+    animation-fill-mode: forwards;
+}
+
+.no {
+    height: 40px;
+    width: 80px;
+    border: 2px solid white;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    animation-name: no;
+    animation-delay: 6s;
+    animation-duration: 100ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes yes {
+    to {
+        border: 2px solid green;
+        color: green;
+    }
+}
+
+@keyframes no {
+    to {
+        border: 2px solid red;
+        color: red;
+    }
+}
+
+.okay {
+    height: 40px;
+    width: 250px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid black;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 900px;
+}
